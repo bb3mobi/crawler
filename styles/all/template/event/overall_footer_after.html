@@ -1,0 +1,22 @@
+<!-- INCLUDEJS @bb3mobi_crawler/crawl.js -->
+<!-- IF .crawlerrow -->
+<script type="text/javascript">
+$(document).ready(function() {
+<!-- BEGIN crawlerrow -->
+	marqueeInit({
+		uniqueid: '{crawlerrow.CRAWLER_ID}',
+		style: {
+			'padding': '0px',
+			'width': '99%',
+			'margin': '0 auto'
+		},
+		inc: {S_CRAWLER_SPEED},
+		mouse: '<!-- IF S_CRAWLER_BEHAVIOR -->cursor driven<!-- ELSE -->pause<!-- ENDIF -->',
+		moveatleast: {S_CRAWLER_MOVEATLEAST},
+		neutral: {S_CRAWLER_NEUTRAL},
+		savedirection: <!-- IF S_CRAWLER_DIRECTION -->true<!-- ELSE -->false<!-- ENDIF -->,
+	});
+	<!-- END crawlerrow -->
+});
+</script>
+<!-- ENDIF -->

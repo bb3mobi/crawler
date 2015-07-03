@@ -1,0 +1,31 @@
+{
+    "name": "bb3mobi/crawler",
+    "type": "phpbb-extension",
+    "description": "Crawler - rotation for blocks.",
+    "homepage": "http://bb3.mobi",
+    "keywords": ["crawler", "rotation", "ajax", "java script", "recent topics for js", "images from posts"],
+    "version": "1.0.0",
+    "time": "2015-07-03",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "John Davenport Scheuer",
+            "homepage": "http://www.dynamicdrive.com/forums/",
+            "role": "Text and/or Image Crawler Script ©2009"
+        },
+        {
+            "name": "Anvar",
+            "homepage": "http://apwa.ru",
+            "role": "Developer Extension"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "extra": {
+        "display-name": "Rotation for blocks",
+        "soft-require": {
+        "phpbb/phpbb": "3.1.*@dev"
+        }
+    }
+}

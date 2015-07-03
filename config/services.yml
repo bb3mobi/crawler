@@ -1,0 +1,8 @@
+services:
+    bb3mobi.crawler.listener:
+        class: bb3mobi\crawler\event\listener
+        arguments:
+            - @config
+            - @template
+        tags:
+            - { name: event.listener }
