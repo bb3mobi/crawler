@@ -3,7 +3,7 @@
 * @package Rotation for blocks
 * @author Anvar [http://bb3.mobi]
 * @version v1.0.0, 2015/07/03
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
 
 namespace bb3mobi\crawler\acp;
@@ -28,7 +28,7 @@ class crawler_module
 		$display_vars = array(
 			'title'	=> 'ACP_CRAWLER',
 			'vars'	=> array(
-				'legend1'	=> 'ACP_RECENT_SETTINGS',
+				'legend1'	=> 'ACP_CRAWLER_TITLE',
 					'crawler_behavior'		=> array('lang' => 'ACP_CRAWLER_BEHAVIOR',		'validate' => 'bool',		'type' => 'radio:yes_no', 'explain' => true),
 					'crawler_id'			=> array('lang' => 'ACP_CRAWLER_ID',			'validate' => 'string',		'type' => 'textarea:6:30', 'explain' => true),
 					'crawler_speed'			=> array('lang' => 'ACP_CRAWLER_SPEED',			'validate' => 'int:0:22',	'type' => 'number:0:22', 'explain' => true),

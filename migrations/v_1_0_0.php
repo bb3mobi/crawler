@@ -2,6 +2,7 @@
 /**
 * @package phpBB3.1 Rotatation for blocks
 * @copyright Anvar Apwa.ru (c) 2015 bb3.mobi
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
 
 namespace bb3mobi\crawler\migrations;

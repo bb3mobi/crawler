@@ -4,7 +4,7 @@
 * @package Rotation for blocks
 * @author Anvar [http://bb3.mobi]
 * @version v1.0.0, 2015/07/03
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
 
 namespace bb3mobi\crawler\event;
@@ -49,7 +49,7 @@ class listener implements EventSubscriberInterface
 		foreach ($crawler_ids as $crawler_id)
 		{
 			$this->template->assign_block_vars('crawlerrow', array(
-				'CRAWLER_ID'	=> trim($crawler_id),
+				'CRAWLER_ID'	=> trim(str_replace('#', '', $crawler_id)),
 			));
 		}
 	}
